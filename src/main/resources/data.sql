@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS client;
+
+CREATE TABLE client (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL,
+  mobile_number VARCHAR(250) DEFAULT NULL,
+  id_number VARCHAR(50) NOT NULL,
+  physical_address MEDIUMTEXT DEFAULT NULL
+);
